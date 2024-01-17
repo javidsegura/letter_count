@@ -1,12 +1,12 @@
 def func(x):
-      clean_x = x.replace(" ","")
-      letters = []
-      results = set()
+      clean_x = x.replace(" ","") # Remove spaces
+      letters = [] 
+      results = set() # Remove duplicated results
       for char in clean_x:
             letters.append(char)
       for i in letters: 
            r = letters.count(i)
-           results.add(f"{i}:{r}")
+           results.add(f"{i}:{r}") 
       return results
 
 print(func("Javi is the greatest"))
